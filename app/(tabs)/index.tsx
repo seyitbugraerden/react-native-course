@@ -12,7 +12,7 @@ export default function HomeScreen() {
     <FlatList
       data={courses} //Verileri çekiyoruz
       // horizontal={true} Yatay şekilde uzatır
-      // showsHorizontalScrollIndicator={false} //scroll bar görüntüsünü ortadan kaldırır.
+      showsHorizontalScrollIndicator={false} //scroll bar görüntüsünü ortadan kaldırır.
       keyExtractor={(item: any) => item.id} //her bir elemanın özel olduğunu belirtmemiz gerek.
       renderItem={({ item }) => { //Çekin verileri map'liyoruz
         return (
